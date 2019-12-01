@@ -16,8 +16,6 @@
  source 가상환경이름/bin/activate   #가상환경 진입
  '''
 
-
-
 # MAC OS virtualenv Wrapper 사용
  위의 단점 보완
  VirtualenvWrapper를 사용할 경우 터미널이 현재 위치한 경로와 관계없이 가상환경을 활성화할 수 있다는 장점이 있습니다.
@@ -39,8 +37,6 @@
  (가상환경이름)$deactivate #가상환경 빠져나오기
 '''
 
-
-
 # WINDOWS virtualenv install
  pip install virtualenv
 
@@ -48,4 +44,12 @@
 
  call 가상환경 경로   #ex) c:\practice-env\Scripts\activate.bat # 가상환경 접속
 
+# Django 설치
+ pip install django
+ pip3 install django
 
+# Django 프로젝트 생성
+django-admin startproject 프로젝트명
+
+# Django 정상 실행 확인
+python manage.py runserver (포트번호) 포트번호 안붙였을때 8000기본
