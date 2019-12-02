@@ -53,3 +53,4 @@ django-admin startproject 프로젝트명
 
 # Django 정상 실행 확인
 python manage.py runserver (포트번호) 포트번호 안붙였을때 8000기본
+
