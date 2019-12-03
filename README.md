@@ -47,10 +47,17 @@
 # Django 설치
  pip install django
  pip3 install django
+ 
+# Django 3.0 업데이트로 인해 python 3.6이상 설치
+
 
 # Django 프로젝트 생성
 django-admin startproject 프로젝트명
 
 # Django 정상 실행 확인
 python manage.py runserver (포트번호) 포트번호 안붙였을때 8000기본
+
+# CRUD 예제
+모델생성 -> makemigrations, migrate 명령어로 테이블생성 -> admin site 수정 -> 관리자 생성 -> views 생성 
+ -> template 생성 or postman 같은 프로그램으로 테스트
 
