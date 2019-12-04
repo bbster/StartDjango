@@ -7,7 +7,7 @@ www.python.org 접속 -> 다운로드 메뉴 -> 버전 선택해서 다운로드
 각각의 다른 라이브러리가 설치된 가상환경을 가질수있고
 사용자가 필요에 따른 다른 가상환경 접속가능 단점 사용자가 하나하나 기억
 
-'''
+
  pip3 -v  # pip 설치 확인
 
  sudo pip3 install virtualenv virtualenvwrapper #virtualenv 설치
@@ -19,12 +19,12 @@ www.python.org 접속 -> 다운로드 메뉴 -> 버전 선택해서 다운로드
  whitch python3 -> 경로 -> virtualenv --python=경로 가상환경이름
 
  source 가상환경이름/bin/activate   #가상환경 진입
- '''
+ 
 
 # MAC OS virtualenv Wrapper 사용
  위의 단점 보완
  VirtualenvWrapper를 사용할 경우 터미널이 현재 위치한 경로와 관계없이 가상환경을 활성화할 수 있다는 장점이 있습니다.
-'''
+
  cd ~ # 홈디렉터리로 이동
 
  mkdir ~/.virtualenvs  #폴더 생성
@@ -40,7 +40,14 @@ www.python.org 접속 -> 다운로드 메뉴 -> 버전 선택해서 다운로드
  workon 가상환경이름 # 가상환경 접속
 
  (가상환경이름)$deactivate #가상환경 빠져나오기
-'''
+
+# MAC OS Pyenv
+brew install pyenv-virtualenv  # pyenv 설치
+
+## ~/.bash_profile 파일에 아래 내용 추가
+eval "$(pyenv init -)"
+
+eval "$(pyenv virtualenv-init -)"
 
 # WINDOWS virtualenv install
  pip install virtualenv
