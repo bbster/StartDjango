@@ -1,3 +1,7 @@
+# Python 설치
+www.python.org 접속 -> 다운로드 메뉴 -> 버전 선택해서 다운로드 -> 다운로드 받은 파일 실행
+-> 설치후 shell에서 python or python3 입력후 엔터 -> version 출력 확인
+
 # MAC OS virtualenv install
 각각의 다른 라이브러리가 설치된 가상환경을 가질수있고
 사용자가 필요에 따른 다른 가상환경 접속가능 단점 사용자가 하나하나 기억
@@ -42,22 +46,25 @@
 
  virtualenv 가상환경이름 #가상환경 생성
 
- call 가상환경 경로   #ex) c:\practice-env\Scripts\activate.bat # 가상환경 접속
+ call 가상환경 경로   #ex)call c:\practice-env\Scripts\activate.bat # 가상환경 접속
+ 
+ # Linux 추가예정
 
 # Django 설치
  pip install django
  pip3 install django
- 
-# Django 3.0 업데이트로 인해 python 3.6이상 설치
-
 
 # Django 프로젝트 생성
 django-admin startproject 프로젝트명
 
+# Django App 생성
+djang-admin startapp 애플리케이션명
+
 # Django 정상 실행 확인
-python manage.py runserver (포트번호) 포트번호 안붙였을때 8000기본
+python manage.py runserver (포트번호) //포트번호 안붙였을때 8000기본
 
 # CRUD 예제
-모델생성 -> makemigrations, migrate 명령어로 테이블생성 -> admin site 수정 -> 관리자 생성 -> views 생성 
- -> template 생성 or postman 같은 프로그램으로 테스트
+모델생성 -> makemigrations, migrate 명령어로 테이블생성 -> admin site 수정 -> 관리자 계정 생성 -> views 생성 -> url매칭
+
+#CRUD 작성후 Django Rest Framework로 테스트
 
