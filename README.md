@@ -1,5 +1,6 @@
 # Python 설치
 www.python.org 접속 -> 다운로드 메뉴 -> 버전 선택해서 다운로드 -> 다운로드 받은 파일 실행
+
 -> 설치후 shell에서 python or python3 입력후 엔터 -> version 출력 확인
 
 # MAC OS virtualenv install
@@ -52,6 +53,7 @@ www.python.org 접속 -> 다운로드 메뉴 -> 버전 선택해서 다운로드
 
 # Django 설치
  pip install django
+ 
  pip3 install django
 
 # Django 프로젝트 생성
