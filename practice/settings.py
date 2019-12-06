@@ -45,7 +45,7 @@ INSTALLED_APPS = [
     # 'allauth.account',
     # 'rest_auth.registration',
     # my app
-    'cbv',
+    'myapp',
     'fbv',
 ]
 
