@@ -3,6 +3,34 @@ www.python.org 접속 -> 다운로드 메뉴 -> 버전 선택해서 다운로드
 
 -> 설치후 shell에서 python or python3 입력후 엔터 -> version 출력 확인
 
+# MAC OS Pyenv install
+brew install pyenv - pyenv 설치
+
+brew upgrade pyenv - pyenv 업그레이드
+
+https://github.com/yyuu/pyenv#basic-github-checkout
+
+Pyenv path 설정
+
+각자 환경에 맞게 .bash_profile 대신 .bashrc 혹은 .zshrc 로 적용한다.
+
+$ echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bash_profile
+
+$ echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bash_profile
+
+$ echo 'eval "$(pyenv init -)"' >> ~/.bash_profile
+
+$ source ~/.bash_profile
+
+pyenv install --list   - 설치할수있는 버전 확인
+
+pyenv install 버전명 ex) pyenv install 3.7.0
+
+pyenv versions   - pyenv 버전 확인  // 출력 * system (set by PYENV_VERSION environment variable) 3.7.0
+
+pyenv virtualenv 버전 가상환경이름 ex) pyenv virtualenv 3.7.0 practice_env
+
+
 # MAC OS virtualenv install
 각각의 다른 라이브러리가 설치된 가상환경을 가질수있고
 사용자가 필요에 따른 다른 가상환경 접속가능 단점 사용자가 하나하나 기억
