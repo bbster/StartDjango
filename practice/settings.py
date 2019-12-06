@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     # 'rest_auth.registration',
     # my app
     'myapp',
+    'myapp2',
 ]
 
 MIDDLEWARE = [
