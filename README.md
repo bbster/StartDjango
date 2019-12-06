@@ -6,29 +6,27 @@ www.python.org 접속 -> 다운로드 메뉴 -> 버전 선택해서 다운로드
 # MAC OS Pyenv install
 brew install pyenv - pyenv 설치
 
-brew upgrade pyenv - pyenv 업그레이드
+ brew upgrade pyenv - pyenv 업그레이드
 
-https://github.com/yyuu/pyenv#basic-github-checkout
+# Pyenv path 설정
 
-Pyenv path 설정
+ 각자 환경에 맞게 .bash_profile 대신 .bashrc 혹은 .zshrc 로 적용한다.
 
-각자 환경에 맞게 .bash_profile 대신 .bashrc 혹은 .zshrc 로 적용한다.
+ $ echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bash_profile
 
-$ echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bash_profile
+ $ echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bash_profile
 
-$ echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bash_profile
+ $ echo 'eval "$(pyenv init -)"' >> ~/.bash_profile
 
-$ echo 'eval "$(pyenv init -)"' >> ~/.bash_profile
+ $ source ~/.bash_profile
 
-$ source ~/.bash_profile
+ pyenv install --list   - 설치할수있는 버전 확인
 
-pyenv install --list   - 설치할수있는 버전 확인
+ pyenv install 버전명 ex) pyenv install 3.7.0
 
-pyenv install 버전명 ex) pyenv install 3.7.0
+ pyenv versions   - pyenv 버전 확인  // 출력 * system (set by PYENV_VERSION environment variable) 3.7.0
 
-pyenv versions   - pyenv 버전 확인  // 출력 * system (set by PYENV_VERSION environment variable) 3.7.0
-
-pyenv virtualenv 버전 가상환경이름 ex) pyenv virtualenv 3.7.0 practice_env
+ pyenv virtualenv 버전 가상환경이름 ex) pyenv virtualenv 3.7.0 practice_env
 
 
 # MAC OS virtualenv install
@@ -90,6 +88,7 @@ eval "$(pyenv virtualenv-init -)"
  pip install django
  
  pip3 install django
+ 
 
 # Django 프로젝트 생성
 django-admin startproject 프로젝트명
