@@ -8,5 +8,5 @@ class SongSerializer(serializers.ModelSerializer):
         fields = (
             'id',
             'name',
-            'describe',
+            'lyrics',
         )

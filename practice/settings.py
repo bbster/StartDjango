@@ -45,8 +45,8 @@ INSTALLED_APPS = [
     # 'allauth.account',
     # 'rest_auth.registration',
     # my app
-    'myapp',
-    'myapp2',
+    'cbv',
+    'fbv',
 ]
 
 MIDDLEWARE = [
