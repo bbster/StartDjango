@@ -5,7 +5,7 @@ from fbv.models import Song
 from fbv.serializers import SongSerializer
 
 
-@api_view(['GET', 'POST'])  # 데코레이터 반복적으로 사용해야 하는 함수를 데코레이터로 사용가능
+@api_view(['GET', 'POST'])  # 데코레이터  반복적으로 사용해야 하는 함수를 데코레이터로 사용가능
 def song_list(request):
     if request.method == 'GET':
         queryset = Song.objects.all().order_by('-id')  # order_by id값 기준으로 최근 게시물 상단
